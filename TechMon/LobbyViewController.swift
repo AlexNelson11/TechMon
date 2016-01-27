@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 class LobbyViewController: UIViewController ,AVAudioPlayerDelegate {
-
+    
     var stamina: Float = 0
     var staminaTimer: NSTimer!
     var util: TechDraUtility!
@@ -23,7 +23,7 @@ class LobbyViewController: UIViewController ,AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-    player = Player(name: "勇者", imageName: "yusya.png")
+        player = Player(name: "勇者", imageName: "yusya.png")
         staminaBar.transform = CGAffineTransformMakeScale(1.0, 4.0)
         
         nameLabel.text = player.name
@@ -34,7 +34,7 @@ class LobbyViewController: UIViewController ,AVAudioPlayerDelegate {
         
         cureStamina()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -59,17 +59,24 @@ class LobbyViewController: UIViewController ,AVAudioPlayerDelegate {
         }else{
             let alert = UIAlertController(title: "Cannot go to battle" , message: "not enough stamina", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
         }
+        
+        
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    
+    
+    func cureStamina() {
+        
+        staminaTimer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "updateStminaValue", userInfo: nil, repeats: true)
+        staminaTimer.fire()
+        
     }
-    */
-
-}
+    func updateStaminaValue() {
+        
+        if stamina <= 100 {
+            stamina = stamina + 1
+            staminaBar.progress = stamina
+        }
+    }}
