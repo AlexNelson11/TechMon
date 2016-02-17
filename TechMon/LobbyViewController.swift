@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class LobbyViewController: UIViewController ,AVAudioPlayerDelegate {
+class LobbyViewController: UIViewController, AVAudioPlayerDelegate  {
     
     var stamina: Float = 0
     var staminaTimer: NSTimer!
@@ -65,18 +65,19 @@ class LobbyViewController: UIViewController ,AVAudioPlayerDelegate {
         
     }
     
-    
-    
+
     func cureStamina() {
         
-        staminaTimer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "updateStminaValue", userInfo: nil, repeats: true)
+        staminaTimer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "updateStaminaValue", userInfo: nil, repeats: true)
         staminaTimer.fire()
         
     }
+    
     func updateStaminaValue() {
         
         if stamina <= 100 {
             stamina = stamina + 1
-            staminaBar.progress = stamina
+            staminaBar.progress = stamina / 100
         }
-    }}
+    }
+}

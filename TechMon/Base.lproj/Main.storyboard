@@ -26,12 +26,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yusya.png" translatesAutoresizingMaskIntoConstraints="NO" id="mQ4-Nl-tVT">
                                 <rect key="frame" x="124" y="202" width="126" height="132"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5C-9h-UhW">
-                                <rect key="frame" x="313" y="49" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JoC-kv-888">
                                 <rect key="frame" x="20" y="49" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -64,6 +58,12 @@
                                     <action selector="toBattle" destination="BYZ-38-t0r" eventType="touchUpInside" id="WWY-mL-oEw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5C-9h-UhW">
+                                <rect key="frame" x="309" y="49" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -77,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="324.5" y="399.5"/>
+            <point key="canvasLocation" x="326.5" y="317.5"/>
         </scene>
         <!--Battle View Controller-->
         <scene sceneID="tx2-Ii-ttr">
@@ -177,6 +177,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="tameruAction" destination="LOt-Om-U3F" eventType="touchUpInside" id="vSQ-6b-tfh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AfW-eq-cjO">
                                 <rect key="frame" x="152" y="541" width="70" height="67"/>
@@ -184,6 +187,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="attackAction" destination="LOt-Om-U3F" eventType="touchUpInside" id="62w-JZ-4Km"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTy-13-v2U">
                                 <rect key="frame" x="255" y="541" width="70" height="67"/>
@@ -191,6 +197,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="fireAction" destination="LOt-Om-U3F" eventType="touchUpInside" id="cN2-7e-PDW"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBe-iz-CVG">
                                 <rect key="frame" x="122" y="268" width="23" height="21"/>
@@ -203,7 +212,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="attackButton" destination="AfW-eq-cjO" id="hL5-Rw-Bee"/>
+                        <outlet property="attackButton" destination="AfW-eq-cjO" id="dUT-ld-Qez"/>
                         <outlet property="backgroundImageView" destination="jx5-id-5sR" id="6GG-xC-JRJ"/>
                         <outlet property="enemyHPBar" destination="Wh2-4j-kre" id="Q0j-px-pZA"/>
                         <outlet property="enemyImageView" destination="pXq-UW-vPI" id="egG-KP-Ws8"/>
@@ -216,11 +225,12 @@
                         <outlet property="playerNameLabel" destination="6Va-fC-5NM" id="id5-Zw-8y6"/>
                         <outlet property="playerTPBar" destination="Fdi-BC-nDf" id="PLF-Su-n3c"/>
                         <outlet property="tameruButton" destination="7dl-4A-EiB" id="AhB-Ba-2PT"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toLobby" modalTransitionStyle="crossDissolve" id="QKG-ml-scw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5cn-5r-69D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="837.5" y="322.5"/>
+            <point key="canvasLocation" x="836.5" y="317.5"/>
         </scene>
     </scenes>
     <resources>

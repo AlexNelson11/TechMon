@@ -37,7 +37,7 @@
 		FA0613BE1C4F9C2500C76E96 /* SE_fanfare.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA0613A91C4F9C2500C76E96 /* SE_fanfare.mp3 */; };
 		FA0613BF1C4F9C2500C76E96 /* SE_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA0613AA1C4F9C2500C76E96 /* SE_fire.mp3 */; };
 		FA0613C01C4F9C2500C76E96 /* SE_gameover.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA0613AB1C4F9C2500C76E96 /* SE_gameover.mp3 */; };
-		FA0613C21C4F9CB800C76E96 /* IMG_3145.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA0613C11C4F9CB800C76E96 /* IMG_3145.jpg */; };
+		FA0644D71C6210C8000F1CBA /* Screen Shot 2016-02-03 at 7.40.41 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0644D61C6210C8000F1CBA /* Screen Shot 2016-02-03 at 7.40.41 PM.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +59,7 @@
 
 /* Begin PBXFileReference section */
 		FA06135C1C4F913700C76E96 /* TechMon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechMon.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA06135F1C4F913700C76E96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA06135F1C4F913700C76E96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		FA0613611C4F913700C76E96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA0613641C4F913700C76E96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA0613661C4F913700C76E96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 		FA0613A91C4F9C2500C76E96 /* SE_fanfare.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SE_fanfare.mp3; sourceTree = "<group>"; };
 		FA0613AA1C4F9C2500C76E96 /* SE_fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SE_fire.mp3; sourceTree = "<group>"; };
 		FA0613AB1C4F9C2500C76E96 /* SE_gameover.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SE_gameover.mp3; sourceTree = "<group>"; };
-		FA0613C11C4F9CB800C76E96 /* IMG_3145.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_3145.jpg; path = ../../IMG_3145.jpg; sourceTree = "<group>"; };
+		FA0644D61C6210C8000F1CBA /* Screen Shot 2016-02-03 at 7.40.41 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screen Shot 2016-02-03 at 7.40.41 PM.png"; path = "../../Screen Shot 2016-02-03 at 7.40.41 PM.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +151,7 @@
 				FA0613661C4F913700C76E96 /* Assets.xcassets */,
 				FA0613681C4F913700C76E96 /* LaunchScreen.storyboard */,
 				FA06136B1C4F913700C76E96 /* Info.plist */,
-				FA0613C11C4F9CB800C76E96 /* IMG_3145.jpg */,
+				FA0644D61C6210C8000F1CBA /* Screen Shot 2016-02-03 at 7.40.41 PM.png */,
 				FA0613911C4F9C2500C76E96 /* TechMon_Resources */,
 				FA06138D1C4F94FB00C76E96 /* LobbyViewController.swift */,
 				FA06138F1C4F968E00C76E96 /* BattleViewController.swift */,
@@ -366,8 +366,8 @@
 				FA0613651C4F913700C76E96 /* Main.storyboard in Resources */,
 				FA0613B11C4F9C2500C76E96 /* bgimage.jpg in Resources */,
 				FA0613C01C4F9C2500C76E96 /* SE_gameover.mp3 in Resources */,
-				FA0613C21C4F9CB800C76E96 /* IMG_3145.jpg in Resources */,
 				FA0613B61C4F9C2500C76E96 /* yusya.png in Resources */,
+				FA0644D71C6210C8000F1CBA /* Screen Shot 2016-02-03 at 7.40.41 PM.png in Resources */,
 				FA0613AD1C4F9C2500C76E96 /* Default-667h@2x.png in Resources */,
 				FA0613AE1C4F9C2500C76E96 /* Default-736h@3x.png in Resources */,
 				FA0613BD1C4F9C2500C76E96 /* SE_charge.mp3 in Resources */,
